@@ -1,0 +1,202 @@
+/* *
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div
+{
+    background: linear-gradient(hotpink,white);
+    height: 100vh;
+    padding: 20px;
+}
+
+input
+{
+    border-radius: 5px;
+    border: none;
+    height: 25px;
+    width: 200px;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    text-indent: 5px;
+}
+
+#listcontainer
+{
+    margin-left: 20px;
+
+}
+
+div > ul > li
+{
+    line-height: 10px;
+    margin-bottom: 10px;
+}
+
+#btn1,#btn2
+{
+    background-color:blue;
+    color: white;
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+#btn1:hover
+{
+    background-color:white;
+    color: red ;
+    cursor: pointer;
+}
+
+#btn1:active
+{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#btn2:hover
+{
+    background-color:white;
+    color: red ;
+    cursor: pointer;
+}
+
+#btn2:active
+{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+} */
+
+
+
+/* Reset default styles */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background */
+body 
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+}
+
+/* Main container */
+div 
+{
+    background: white;
+    padding: 25px;
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Input field */
+#input 
+{
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Add button */
+#btn1 
+{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #4f46e5;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/* Add button hover */
+#btn1:hover 
+{
+    background: #4338ca;
+    transform: scale(1.05);
+}
+
+/* Todo list */
+ul 
+{
+    margin-top: 20px;
+}
+
+/* Todo items */
+li 
+{
+    list-style: none;
+    background: #f9fafb;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+    animation: fadeIn 0.3s ease-in;
+}
+
+/* Hover effect */
+li:hover
+{
+    background: #eef2ff;
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.2);
+}
+
+/* Delete button */
+#btn2
+{
+    background: #ef4444;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+/* Delete hover */
+#btn2:hover 
+{
+    background: #dc2626;
+    transform: scale(1.05);
+}
+
+/* Smooth animation */
+@keyframes fadeIn 
+{
+    from 
+    {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to 
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
